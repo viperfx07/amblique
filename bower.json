@@ -1,0 +1,26 @@
+{
+  "name": "amblique",
+  "version": "0.0.0",
+  "authors": [
+    "Victor Tanudjaja <viperfx07@gmail.com>"
+  ],
+  "description": "technical assestment of amblique",
+  "keywords": [
+    "amblique",
+    "technical",
+    "assestment",
+    "front",
+    "end"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.x"
+  }
+}

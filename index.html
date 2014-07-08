@@ -4,98 +4,109 @@
 <head>
     <title>CLIENT</title>
     <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <!--  HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries  -->
+    <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="logo"></div>
-        <div id="cart">
-        	<span>CART</span>
-        	<div id="cart_items">
-        		<span>ITEMS:</span>
-        		<span id="item_count">1</span>
-        	</div>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li>new arrivals</li>
-            <li>tops</li>
-            <li>denim</li>
-            <li>dresses</li>
-            <li>jackets</li>
-            <li>knitwear</li>
-            <li>pants</li>
-            <li>skirts</li>
-            <li>accessories</li>
-        </ul>
-        <div class="search">
-            <span>Search</span>
-            <span>
-                <input type="text" name="search" id="txt_search" />
-            </span>
-        </div>
-    </nav>
-    <div>
-    	&lt; Back to product list
-    </div>
-    <article>
-        <section>
-            <img src="http://placehold.it/500x500">
-        </section>
-    </article>
-    <aside>
-        <section class="product">
-            <section id="product_name">PRODUCT NAME</section>
-            <section id="product_breadcrumb">
-            	<ul>
-            		<li>home</li>
-            		<li>pants &amp; leggings</li>
-            		<li class="current">pants &amp; leggings</li>
-            	</ul>
-            </section>
-        </section>
-        <section id="description">
-
-        </section>
-        <div class="price">
-            <strong id="current_price">$19.95</strong>
-            <span>(WAS $39.95)</span>
-        </div>
-        <button type="button" id="btn_buy">buy now</button>
-    </aside>
-    <footer>
-        <ul>
-            <li>&copy; client 2010 all rights reserved</li>
-            <li>privacy policy</li>
-            <li>terms and conditions</li>
-            <li>site by amblique</li>
-        </ul>
-        <section class="payment-method">
+    <div class="container">
+        <header>
+            <div id="logo">CLIENT</div>
+            <div id="cart">
+                <span id="cart_title">CART</span>
+                <div id="cart_items">
+                    <span id="items_title">ITEMS:</span>
+                    <span id="item_count"></span>
+                </div>
+                <div id="cart_popup">
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+        </header>
+        <div class="clearfix"></div>
+        <nav>
             <ul>
+                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="#">TOPS</a></li>
+                <li><a href="#">DENIM</a></li>
+                <li><a href="#">DRESSES</a></li>
+                <li><a href="#">JACKETS</a></li>
+                <li><a href="#">KNITWEAR</a></li>
+                <li><a href="#">PANTS</a></li>
+                <li><a href="#">SKIRTS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+            </ul>
+            <div class="search">
+                <span id="search_title">SEARCH</span>
+                <input type="text" name="search" id="txt_search" value="Enter a keyword" />
+            </div>
+        </nav>
+        <div class="details_container">
+            <div id="back_button">
+                &lt; <a href="#">Back to product list</a>
+            </div>
+            <article id="product_image_container">
+                <section>
+                    <img src="http://placehold.it/450x470">
+                </section>
+            </article>
+            <aside id="product_details">
+                <section id="product">
+                    <section id="product_name">PRODUCT NAME</section>
+                    <section id="product_breadcrumb">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">PANTS &amp; LEGGINGS</a></li>
+                            <li>PANTS &amp; LEGGINGS</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </section>
+                </section>
+                <section id="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum sodales nvallis. Curabitur quis felis quis tellus pretium sollicitudin. Integer dictum.
+                </section>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="current_price">19.95</span>
+                    <span class="old_price">(WAS $39.95)</span>
+                </div>
+                <button type="button" id="btn_buy">BUY NOW</button>
+            </aside>
+            <div class="clearfix"></div>
+        </div>
+        <footer>
+            <div id="copyright">&copy; CLIENT 2010 ALL RIGHTS RESERVED</div>
+            <ul id="footer-links">
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">TERMS AND CONDITIONS</a></li>
+                <li><a href="#">SITE BY AMBLIQUE</a></li>
+            </ul>
+            <ul id="payment-method">
                 <li>
-                    <a href="http://www.mastercard.com.au/" target="_blank">
-                        <img src="">mc</a>
+                    <a href="http://www.mastercard.com.au/" target="_blank" title="Mastercard">
+                        <img src="assets/img/creditcards_01.png" alt="Mastercard"></a>
                 </li>
                 <li>
-                    <a href="http://www.visa.com.au" target="_blank">
-                        <img src="">visa</a>
+                    <a href="http://www.visa.com.au" target="_blank" title="Visa">
+                        <img src="assets/img/creditcards_02.png" alt="Visa"></a>
                 </li>
                 <li>
-                    <a href="http://www.paypal.com.au" target="_blank">
-                        <img src="">paypal</a>
+                    <a href="http://www.paypal.com.au" target="_blank" title="Paypal">
+                        <img src="assets/img/creditcards_03.png" alt="Paypal"></a>
                 </li>
                 <li>
-                    <a href="https://www.americanexpress.com/australia/" target="_blank">
-                        <img src="">amex</a>
+                    <a href="https://www.americanexpress.com/australia/" target="_blank" title="Amex">
+                        <img src="assets/img/creditcards_04.png" alt="Amex"></a>
                 </li>
                 <li>
-                    <a href="https://www.verisign.com.au" target="_blank">
-                        <img src="">verisign</a>
+                    <a href="https://www.verisign.com.au" target="_blank" title="Verisign">
+                        <img src="assets/img/creditcards_05.png" alt="Verisign"></a>
                 </li>
             </ul>
-        </section>
-    </footer>
+        </footer>
+    </div>
     <script type="text/javascript" src="assets/js/all.min.js"></script>
 </body>
 

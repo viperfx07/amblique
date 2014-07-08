@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 gulp.task('css',function(){
   gulp
     .src([
+       'assets/css/reset.css',
        'assets/css/style.css'
       ])
     .pipe(concat('all.css'))

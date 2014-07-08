@@ -1,3 +1,320 @@
-.amblique-placeholder{
-	
+@font-face
+{
+	font-family: 'Helvetica Neue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'HelveticaNeueCondensedBold';
+	src: url('../fonts/HelveticaNeue-CondensedBold.eot');
+	src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size:12px;
+}
+
+.container{
+	width:960px;
+	margin: 30px auto;
+}
+
+.details_container{
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin-bottom: 32px;
+}
+
+
+/* Logo */
+#logo{
+	margin:0;
+	padding:0;
+	font-family: "HelveticaNeueCondensedBold";
+	font-size:61.22px;
+	color: #33cccc;
+	display:inline-block;
+	float:left;
+	letter-spacing: 1px;
+}
+
+/* Cart */
+#cart{
+	margin-top:30px;
+	margin-bottom:14px;
+	display:inline-block;
+	float:right;
+	background-color: #252525;
+	color:#fff;
+	padding:12px;
+}
+
+#cart_title, #item_count{
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#cart_items{
+	display:inline;
+	margin-left:40px;
+}
+
+#items_title{
+	font-size:12px;
+}
+
+/* Search */
+nav .search{
+	float:right;
+	margin-top:8px;
+	margin-right:10px;
+
+}
+
+#search_title{
+	color: #33cccc;
+	margin-right:10px;
+	font-size:14px;
+	margin-top:5px;
+	display:inline-block;
+}
+
+#txt_search{
+	margin-top:0px;
+	color: #999999;
+	font-size:11px;
+	background-image: url('../img/magnifier.png') no-repeat;
+}
+
+#back_button{
+	margin-top:18px;
+	margin-bottom:10px;
+}
+
+/* Navigation */
+nav{
+	background-color:#252525;
+}
+nav ul{
+	position:relative;
+	display:inline-block;
+	color:#fff;
+	padding-bottom:15px;
+	padding-left:0;
+	padding-top:0;
+	margin-top:0;
+	margin-left:15px;
+	width: 720px;
+}	
+
+nav ul li{
+	float:left;
+	display:inline-block;
+	padding: 15px 28px 0 0;
+	font-size:11px;
+}
+
+nav ul li:last-child{
+	padding-right:0;
+}
+
+nav ul li a, a, nav ul li a:hover, nav ul li a:active, nav ul li a:visited{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/* Links */
+a, a:hover, a:active, a:visited{
+	color: #33cccc;
+	text-decoration: none;
+}
+
+/* Product Image */
+#product_image_container{
+	float:left;
+	display: inline-block;
+	width: 450px;
+	padding-right:20px;
+}
+
+/* Product Details */
+#product_details{
+	display:inline-block;
+	width: 450px;
+	float:left;
+}
+#product_name{
+	font-size:16px;
+	color: #666666;
+	margin-bottom:10px;
+}
+
+#product{
+	margin-bottom: 42px;
+}
+
+#product_breadcrumb ul li{
+	float:left;
+	color: #999999;
+	font-size: 10px;
+	padding-right:5px;
+}
+
+#product_breadcrumb ul li:after{
+	padding-left:5px;
+	content: '>';
+}
+
+#product_breadcrumb ul li:last-child:after{
+	padding-left:0;
+	content: '';
+}
+
+#product_details #description{
+	color:#999999;
+	font-size:12px;
+	margin-bottom:50px;
+}
+
+.price{
+	color:#666666;
+	margin-bottom: 15px;
+}
+
+.price .currency{
+	margin-top:0;
+	font-size:12px;
+	display:inline-block;
+}
+
+.price .current_price{
+	margin-top:0;
+	font-size:16px;
+	display:inline-block;
+}
+
+.price .old_price{
+	font-size:11px;
+}
+
+#btn_buy{
+	border:0;
+	background-color:#252525;
+	color:#ffffff;
+	width: 180px;
+	height: 43px;
+	font-size:18px;
+}
+
+/* Footer */
+footer{
+	padding-top: 20px;
+	border-top: 2px solid #ccc;
+	color:#999999;
+	font-size:10px;
+}
+
+footer ul li{
+	float:left;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+footer a, a, footer a:hover, footer a:active, footer a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+footer ul li:last-child{
+	margin-right: 0;
+}
+
+#copyright{
+	display: inline-block;
+	float:left;
+	margin-right: 15px;
+}
+
+#payment-method{
+	float:right;
+	margin-top:-10px;
+}
+
+#payment-method li{
+	margin-right: 0;
+}
+
+.creditcard .mastercard{
+	background: url('imgs/creditcards.png') no-repeat -53px -14px;
+	width: 37px;
+	height: 11px;
+}
+
+.creditcard .visa{
+	background: url('imgs/creditcards.png') no-repeat -104px -16px;
+	width: 37px;
+	height: 10px;
+}
+
+.creditcard .paypal{
+	background: url('imgs/creditcards.png') no-repeat -104px -16px;
+	width: 37px;
+	height: 10px;
+}
+
+
+.creditcard .amex{
+	background: url('imgs/creditcards.png') no-repeat -155px -10px;
+	width: 38px;
+	height: 19px;
+}
+
+.creditcard .verisign{
+	background: url('imgs/creditcards.png') no-repeat -206px -1px;
+	width: 69px;
+	height: 37px;
+}
+
+/* Cart Popup */
+#cart_popup{
+	position:absolute; 
+	background-color:#252525; 
+	padding:30px; 
+	display: none;
+}
+
+#cart_popup table td{
+	padding: 5px;
+}
+
+/* Helper */
+
+.clearfix{
+	clear:both;
+}
+
+
+.pull-left{
+	float:left;
+}
+
+.pull-right{
+	float:right;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.span4{
+	width:30%;
+	display: inline-block;
 }
